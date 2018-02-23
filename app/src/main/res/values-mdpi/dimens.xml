@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">14dp</dimen>
+    <dimen name="nav_header_vertical_spacing">14dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="menu_item_height">160dp</dimen>
+    <!--sidemenu-->
+    <dimen name="badge_item_size">24dp</dimen>
+    <dimen name="badge_item_margin_top">15dp</dimen>
+    <dimen name="badge_cart_size">20dp</dimen>
+    <dimen name="badge_cart_icon">36dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">20dp</dimen>
+    <dimen name="design_navigation_text_size" tools:override="true">14sp</dimen>
+    <dimen name="design_navigation_item_height">40dp</dimen>
+    <dimen name="header_text_size" tools:override="true">18sp</dimen>
+
+    <dimen name="circleimageview">60dp</dimen>
+    <dimen name="profile_name">16dp</dimen>
+    <dimen name="profile_edit">12dp</dimen>
+
+    <!--cart-->
+    <dimen name="cart_item_height">100dp</dimen>
+    <dimen name="cart_title">16sp</dimen>
+    <dimen name="cart_description">12sp</dimen>
+    <dimen name="cart_price">14sp</dimen>
+    <dimen name="cart_cross">20dp</dimen>
+    <dimen name="cart_button_width">35dp</dimen>
+    <dimen name="cart_button_height">25dp</dimen>
+    <dimen name="cart_button_margin_left">36dp</dimen>
+    <dimen name="cart_button_icon_size">35dp</dimen>
+
+    <dimen name="cart_bottom_margin_bottom">60dp</dimen>
+    <dimen name="cart_bottom_card">50dp</dimen>
+    <dimen name="cart_bottom_price">16sp</dimen>
+    <dimen name="cart_dividerHeight">10dp</dimen>
+
+    <!--item comments-->
+    <dimen name="item_comment_title">15sp</dimen>
+    <dimen name="item_comment_title_padding_left">12dp</dimen>
+    <dimen name="item_comment_text">12sp</dimen>
+    <dimen name="item_comment_text_marginTop">6dp</dimen>
+    <dimen name="item_comment_text_line_height">2sp</dimen>
+    <dimen name="item_comment_user_pic">50dp</dimen>
+
+    <dimen name="item_comment_message_height">45dp</dimen>
+    <dimen name="item_comment_message_editor_size">16sp</dimen>
+    <dimen name="item_comment_message_button_width">100dp</dimen>
+    <dimen name="item_comment_message_button_size">14sp</dimen>
+
+    <!--backbutton-->
+    <dimen name="back_button">25dp</dimen>
+    <dimen name="back_button_right">10dp</dimen>
+
+    <!--check-out activity-->
+    <dimen name="heading_light_size">14sp</dimen>
+    <dimen name="heading_light_marginStart">16dp</dimen>
+    <dimen name="heading_light_marginBottom">10dp</dimen>
+
+    <dimen name="heading_sub_light_size">12sp</dimen>
+    <dimen name="heading_sub_light_marginStart">14dp</dimen>
+    <dimen name="heading_sub_light_marginTop">10dp</dimen>
+
+    <dimen name="spinner_margin_right_left">8dp</dimen>
+    <dimen name="spinner_padding_right_left">4dp</dimen>
+    <dimen name="spinner_padding_top">20dp</dimen>
+    <dimen name="spinner01_margin_top">8dp</dimen>
+    <dimen name="spinner02_margin_top">50dp</dimen>
+
+    <dimen name="spinner_item_padding_left_right">10dp</dimen>
+    <dimen name="spinner_item_padding_top_bottom">5dp</dimen>
+    <dimen name="spinner_item_icon_size">30dp</dimen>
+    <dimen name="spinner_item_text_size">13sp</dimen>
+
+    <!--offers-->
+    <dimen name="item_image_height">240dp</dimen>
+</resources>

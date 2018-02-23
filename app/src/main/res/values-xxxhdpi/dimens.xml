@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">18dp</dimen>
+    <dimen name="nav_header_vertical_spacing">18dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="menu_item_height">200dp</dimen>
+
+    <!--sidemenu-->
+    <dimen name="badge_item_size">30dp</dimen>
+    <dimen name="badge_item_margin_top">10dp</dimen>
+    <dimen name="badge_cart_size">22dp</dimen>
+    <dimen name="badge_cart_icon">40dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">28dp</dimen>
+    <dimen name="design_navigation_text_size" tools:override="true">18sp</dimen>
+    <dimen name="design_navigation_item_height">50dp</dimen>
+    <dimen name="header_text_size" tools:override="true">22sp</dimen>
+
+    <dimen name="circleimageview">80dp</dimen>
+    <dimen name="profile_name">20dp</dimen>
+    <dimen name="profile_edit">14dp</dimen>
+
+    <!--cart-->
+    <dimen name="cart_item_height">120dp</dimen>
+    <dimen name="cart_title">18sp</dimen>
+    <dimen name="cart_description">14sp</dimen>
+    <dimen name="cart_price">18sp</dimen>
+    <dimen name="cart_cross">20dp</dimen>
+    <dimen name="cart_button_width">40dp</dimen>
+    <dimen name="cart_button_height">35dp</dimen>
+    <dimen name="cart_button_margin_left">41dp</dimen>
+    <dimen name="cart_button_icon_size">40dp</dimen>
+</resources>

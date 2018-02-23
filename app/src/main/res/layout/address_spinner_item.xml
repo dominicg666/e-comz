@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="@dimen/spinner_item_padding_left_right"
+android:paddingRight="@dimen/spinner_item_padding_left_right"
+android:paddingTop="@dimen/spinner_item_padding_top_bottom"
+android:paddingBottom="@dimen/spinner_item_padding_top_bottom">
+
+<ImageView
+    android:id="@+id/address_icon"
+    android:layout_width="@dimen/spinner_item_icon_size"
+    android:layout_height="@dimen/spinner_item_icon_size"
+    android:background="@null"
+    app:srcCompat="@mipmap/ic_address"
+    android:layout_marginTop="0dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true" />
+
+<TextView
+    android:id="@+id/address_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorMenu"
+    android:textSize="@dimen/spinner_item_text_size"
+    android:text="Online"
+    android:singleLine="false"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/address_icon" />
+</RelativeLayout>

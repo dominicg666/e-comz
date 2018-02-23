@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgraound">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/item_fav_button"
+        android:layout_marginBottom="@dimen/item_fav_button"
+        android:paddingEnd="25dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingStart="25dp" />
+
+    <LinearLayout
+        android:id="@+id/btnHolderLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/Altin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_fav_button"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:textSize="@dimen/item_fav_button_size"
+            android:textColor="@color/colorMenuTrans"
+            android:drawableLeft="@drawable/button_fav_icon"
+            android:drawableTint="@color/colorMenuTrans"
+            android:background="@drawable/ripple_button_white"
+            android:padding="@dimen/item_fav_button_padding"
+            android:text="ADD TO FAVORITE"/>
+
+        <Button
+            android:id="@+id/Doviz"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_fav_button"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:textSize="@dimen/item_fav_button_size"
+            android:padding="@dimen/item_fav_button_padding"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/button_cart_icon"
+            android:background="@drawable/ripple_button"
+            android:text="ADD TO CART" />
+    </LinearLayout>
+</RelativeLayout>

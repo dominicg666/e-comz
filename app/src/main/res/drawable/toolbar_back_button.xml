@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:left="0dp"
+        android:right="@dimen/back_button_right"
+        android:height="@dimen/back_button"
+        android:width="@dimen/back_button">
+
+        <bitmap android:src="@mipmap/ic_back" />
+        <!-- this is your desired image -->
+    </item>
+
+</layer-list>

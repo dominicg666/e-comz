@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DAAA"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <!-- ImageVView and TextView for custom Toast -->
+
+    <TextView
+        android:id="@+id/toastTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="@dimen/toast_font_size"
+        android:background="@color/colorMenuTrans"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

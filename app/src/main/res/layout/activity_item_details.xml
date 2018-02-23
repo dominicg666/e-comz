@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:fitsSystemWindows="true"
+            app:titleEnabled="false">
+
+            <RelativeLayout
+                android:id="@+id/slider_layout"
+                android:layout_width="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_height="@dimen/item_slider_height"
+                app:layout_collapseMode="parallax"
+                android:orientation="horizontal">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_circleindicator_height"
+                    app:ci_drawable="@drawable/circleindicator_round"
+                    app:ci_drawable_unselected="@drawable/circleindicator_unselected_dot"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/item_circleindicator_margin_bottom"
+                    android:layout_alignParentBottom="true"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_details_bottom_frame_height"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/card_gradient"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:text="Beaf Steak, sauce, french fies"
+                        android:textSize="@dimen/item_details_text_left"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$20.40"
+                        android:textSize="@dimen/item_details_price"
+                        android:textColor="@color/colorAccentLight"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="13dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                android:background="@drawable/toolbar_gradient"
+                android:paddingRight="6dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ToolBarStyle"
+                app:layout_collapseMode="pin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Some Fancy Title"
+                    android:gravity = "center"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/toolbar_title"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/header_text_size"/>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <RelativeLayout
+            android:id="@+id/comment_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:id="@+id/btnHolderLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Altin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/item_fav_button"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:textSize="@dimen/item_fav_button_size"
+                    android:textColor="@color/colorMenuTrans"
+                    android:drawableLeft="@drawable/button_fav_icon"
+                    android:drawableTint="@color/colorMenuTrans"
+                    android:background="@drawable/ripple_button_secondary"
+                    android:padding="@dimen/item_fav_button_padding"
+                    android:text="ADD TO FAVORITE"/>
+
+                <Button
+                    android:id="@+id/Doviz"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/item_fav_button"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:textSize="@dimen/item_fav_button_size"
+                    android:padding="@dimen/item_fav_button_padding"
+                    android:textColor="@color/colorWhite"
+                    android:drawableLeft="@drawable/button_cart_icon"
+                    android:background="@drawable/ripple_button"
+                    android:text="ADD TO CART" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/item_comment_title_padding_left"
+                android:textSize="@dimen/item_comment_title"
+                android:text="Comments(324)"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@+id/btnHolderLL"
+                />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:padding="0dp">
+
+
+         <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_marginBottom="@dimen/item_details_bottom_frame_height"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_comment_message_height"
+        android:background="@color/colorBackgraound"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_alignParentTop="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:hint="Your Message..."
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="@dimen/item_comment_message_button_size"
+            android:inputType="textMultiLine">
+
+        </EditText>
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:text="COMMENT"
+            android:textSize="@dimen/item_comment_message_button_size"
+            android:background="@drawable/ripple_button"
+            android:textColor="@color/colorWhite"
+            android:clickable="true"
+            android:layout_width="@dimen/item_comment_message_button_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

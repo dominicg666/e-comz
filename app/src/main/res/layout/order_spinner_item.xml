@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/spinner_item_padding_left_right"
+    android:paddingRight="@dimen/spinner_item_padding_left_right"
+    android:layout_margin="0dp">
+
+    <ImageView
+        android:id="@+id/payment_icon"
+        android:layout_width="@dimen/spinner_item_icon_size"
+        android:layout_height="@dimen/spinner_item_icon_size"
+        android:background="@null"
+        app:srcCompat="@mipmap/ic_payment_online"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/payment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorMenu"
+        android:textSize="@dimen/spinner_item_text_size"
+        android:text="Online"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/payment_icon"/>
+</RelativeLayout>

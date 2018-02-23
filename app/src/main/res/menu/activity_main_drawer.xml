@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@mipmap/ic_menu"
+            android:title="Menu"
+            />
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@mipmap/ic_offer"
+            android:title="Offers"
+            app:actionLayout="@layout/badge_menu_layout"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@mipmap/ic_cart"
+            android:title="My Cart"
+            app:actionLayout="@layout/badge_menu_layout"/>
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@mipmap/ic_order"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@mipmap/ic_fav"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_settings"
+            android:title="Settings" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

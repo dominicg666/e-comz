@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottomCard">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/nameTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/item_comment_text_marginTop"
+                        android:text="Name"
+                        android:textColor="@color/colorAccent"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/my_profile_content_tilte"
+                        android:layout_marginStart="19dp"
+                        android:layout_toStartOf="@+id/imageButton2" />
+
+                    <TextView
+                        android:id="@+id/textname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nameTitle"
+                        android:layout_alignStart="@+id/nameTitle"
+                        android:textSize="@dimen/my_profile_content_subtilte"
+                        android:lineSpacingExtra="@dimen/item_comment_text_line_height"
+                        android:minHeight="12dp"
+                        android:singleLine="false"
+                        android:text="Taylor Swift"
+                        android:layout_marginTop="@dimen/my_profile_content_subtilteMarginTop"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/name"
+                android:id="@+id/phonecard"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/phonetitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/item_comment_text_marginTop"
+                        android:text="Mobile"
+                        android:textColor="@color/colorAccent"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/my_profile_content_tilte"
+                        android:layout_marginStart="19dp"
+                        android:layout_toStartOf="@+id/imageButton2" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phonetitle"
+                        android:layout_alignStart="@+id/phonetitle"
+                        android:textSize="@dimen/my_profile_content_subtilte"
+                        android:lineSpacingExtra="@dimen/item_comment_text_line_height"
+                        android:minHeight="12dp"
+                        android:singleLine="false"
+                        android:text="+91-8129-409227"
+                        android:layout_marginTop="@dimen/my_profile_content_subtilteMarginTop"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/phonecard"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/emailtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/item_comment_text_marginTop"
+                        android:text="E-mail"
+                        android:textColor="@color/colorAccent"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/my_profile_content_tilte"
+                        android:layout_marginStart="19dp"
+                        android:layout_toStartOf="@+id/imageButton2" />
+
+                    <TextView
+                        android:id="@+id/emailtitletext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emailtitle"
+                        android:layout_alignStart="@+id/emailtitle"
+                        android:textSize="@dimen/my_profile_content_subtilte"
+                        android:lineSpacingExtra="@dimen/item_comment_text_line_height"
+                        android:minHeight="12dp"
+                        android:singleLine="false"
+                        android:text="office@thenoprowess.com"
+                        android:layout_marginTop="@dimen/my_profile_content_subtilteMarginTop"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bottomCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cart_bottom_card"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:foreground="@drawable/ripple_rectangle"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/cart_bottom_price"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

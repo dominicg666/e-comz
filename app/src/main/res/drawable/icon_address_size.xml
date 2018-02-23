@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@mipmap/ic_address_text"
+        android:width="@dimen/item_fav_button_icon"
+        android:height="@dimen/item_fav_button_icon"
+        android:right="10dp"
+        android:scaleType="center"
+
+        />
+
+</layer-list >
