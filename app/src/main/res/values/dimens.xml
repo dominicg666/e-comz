@@ -137,6 +137,14 @@
     <dimen name="havealready_margintop">20dp</dimen>
     <dimen name="havealready_textsize">15sp</dimen>
 
+    <dimen name="carticon_width">40dp</dimen>
+    <dimen name="carticon_height">35dp</dimen>
+    <dimen name="regmobile_margintop">70dp</dimen>
+    <dimen name="sendBtn_margintop">50dp</dimen>
+    <dimen name="sendotp_margintop">20dp</dimen>
+    <dimen name="back_margintop">40dp</dimen>
+    <dimen name="donebtn_margintop">50dp</dimen>
+
 
 
 </resources>

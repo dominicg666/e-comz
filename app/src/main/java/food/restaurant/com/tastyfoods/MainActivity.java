@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import food.restaurant.com.tastyfoods.Font.Calligrapher;
 import food.restaurant.com.tastyfoods.Fragment.CartFragment;
+import food.restaurant.com.tastyfoods.Fragment.FavoriteFragment;
 import food.restaurant.com.tastyfoods.Fragment.MenuFragment;
 import food.restaurant.com.tastyfoods.Fragment.OffersFragment;
 import food.restaurant.com.tastyfoods.Fragment.SettingsFragment;
@@ -144,8 +145,8 @@ public class MainActivity extends AppCompatActivity
             toolbar_title.setText("Settings");
 
         } else if (id == R.id.nav_fav) {
+            initializeFragment(FavoriteFragment.class);
             toolbar_title.setText("Favorite");
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

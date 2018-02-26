@@ -47,6 +47,14 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".ForgotOTP"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".ItemDetailsActivity"
                   android:theme="@style/AppTheme.NoActionBar">
 

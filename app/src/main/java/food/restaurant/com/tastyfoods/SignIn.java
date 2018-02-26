@@ -35,8 +35,8 @@ private TextView forgot;
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent=new Intent(SignIn.this,ForgotPassword.class);
-//                startActivity(intent);
+                Intent intent=new Intent(SignIn.this,ForgotPassword.class);
+                startActivity(intent);
             }
         });
     }

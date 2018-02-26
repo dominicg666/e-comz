@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotOTP">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_food_image" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorMenuTrans">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="@dimen/relative_layout_signin"
+            android:layout_marginLeft="@dimen/relative_layout_signin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logo_height"
+                android:src="@drawable/logo"
+                android:layout_marginTop="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/EditTextHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/otp"
+                android:hint="OTP"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/imageView">
+
+                <EditText
+                    android:id="@+id/otp_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="phone"
+                    android:textSize="@dimen/textInputLayout_textsize"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/EditTextHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/newpass"
+                android:hint="New Password"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/otp">
+
+                <EditText
+                    android:id="@+id/newpass_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/textInputLayout_textsize"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/EditTextHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/cpass"
+                android:hint="Confirm Password"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/newpass">
+                <EditText
+                    android:id="@+id/cpass_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/textInputLayout_textsize"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/done"
+                android:layout_below="@id/cpass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/donebtn_margintop"
+                android:text="Done"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/buttonSignUp_textsize"
+                android:background="@drawable/buttonshape"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
