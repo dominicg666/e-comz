@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="food.restaurant.com.tastyfoods.SignIn">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_food_image" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorMenuTrans">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="@dimen/relative_layout_signin"
+            android:layout_marginLeft="@dimen/relative_layout_signin"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logo_height"
+                android:src="@drawable/logo"
+                android:layout_marginTop="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/EditTextHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/mobilecheck"
+                android:hint="Mobile"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/imageView"
+                >
+
+                <EditText
+                    android:id="@+id/mobilecheck_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:textSize="@dimen/textInputLayout_textsize"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/passwordcheck"
+                android:hint="Password"
+                android:theme="@style/EditTextHint"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/mobilecheck">
+
+                <EditText
+                    android:id="@+id/passwordcheck_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/textInputLayout_textsize"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/passwordcheck"
+                android:layout_marginTop="@dimen/forgotpass_margintop"
+                android:text="@string/forgotpassword"
+                android:textColor="@color/colorAccentLight"
+                android:textSize="@dimen/forgotpass_textsize" />
+
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_below="@id/forgot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signIn_margintop"
+                android:text="Sign In"
+                android:onClick="signin"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/buttonSignUp_textsize"
+                android:background="@drawable/buttonshape"
+                />
+
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signIn"
+                android:layout_marginTop="@dimen/newuser_margintop"
+                android:layout_toStartOf="@+id/forgot"
+                android:text="New user?"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/forgotpass_textsize" />
+            <TextView
+                android:id="@+id/newuserText"
+                android:layout_marginTop="@dimen/newuser_margintop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signIn"
+                android:layout_toEndOf="@+id/user"
+                android:textColor="@color/colorAccentLight"
+                android:layout_marginLeft="@dimen/newuser_left"
+                android:text="@string/newuser"
+                android:textSize="@dimen/forgotpass_textsize"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

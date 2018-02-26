@@ -33,23 +33,17 @@ public class MyProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView=inflater.inflate(R.layout.fragment_my_profile, container, false);
 
-        CardView bottomCard=(CardView)rootView.findViewById(R.id.bottomCard) ;
-        bottomCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
-        CardView add_new_address=(CardView) rootView.findViewById(R.id.bottomCard);
-        add_new_address.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                AddressBottomsheet bottomSheetDialogFragment = new AddressBottomsheet();
-//                bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
-                Intent intent =new Intent(getActivity(),EditProfile.class);
-                startActivity(intent);
-            }
-        });
+//        CardView add_new_address=(CardView) rootView.findViewById(R.id.bottomCard);
+//        add_new_address.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                AddressBottomsheet bottomSheetDialogFragment = new AddressBottomsheet();
+////                bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
+//                Intent intent =new Intent(getActivity(),EditProfile.class);
+//                startActivity(intent);
+//            }
+//        });
         Calligrapher calligrapher = new Calligrapher(getActivity());
         calligrapher.setFont(getActivity(), "Lato-Regular.ttf", true);
         return rootView;

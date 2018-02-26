@@ -56,16 +56,16 @@ public class MyaddressFragment extends Fragment {
         listView.setLayoutManager(mLayoutManager);
         listView.setAdapter(adapter);
 
-        CardView add_new_address=(CardView) rootView.findViewById(R.id.bottomCard);
-        add_new_address.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                AddressBottomsheet bottomSheetDialogFragment = new AddressBottomsheet();
-//                bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
-                Intent intent =new Intent(getActivity(),AddAddress.class);
-                startActivity(intent);
-            }
-        });
+//        CardView add_new_address=(CardView) rootView.findViewById(R.id.bottomCard);
+//        add_new_address.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                AddressBottomsheet bottomSheetDialogFragment = new AddressBottomsheet();
+////                bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
+//                Intent intent =new Intent(getActivity(),AddAddress.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 

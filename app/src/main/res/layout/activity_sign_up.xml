@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="food.restaurant.com.tastyfoods.SignUp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_food_image" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorMenuTrans">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/relative_layout_signin"
+            android:layout_marginLeft="@dimen/relative_layout_signin"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logo_height"
+                android:src="@drawable/logo"
+                android:layout_marginTop="@dimen/logo_margin_top"/>
+
+            <android.support.design.widget.TextInputLayout
+                   android:theme="@style/EditTextHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/texthint_margintop"
+                    android:id="@+id/name"
+                   android:hint="Name"
+                 app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+
+                android:layout_below="@id/imageView"
+               >
+
+               <EditText
+                   android:id="@+id/name_field"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:ems="10"
+                   android:inputType="textCapWords"
+                   android:textSize="@dimen/textInputLayout_textsize"/>
+           </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/texthint_margintop"
+        android:id="@+id/mobile"
+        android:hint="Mobile"
+        android:theme="@style/EditTextHint"
+        app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/name">
+
+        <EditText
+            android:id="@+id/mobile_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/textInputLayout_textsize"/>
+    </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/EditTextHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/texthint_margintop"
+                android:id="@+id/password"
+                android:hint="Password"
+                app:hintTextAppearance="@style/AppTheme.TextInputLayout"
+                android:layout_below="@id/mobile"
+                >
+
+                <EditText
+                    android:id="@+id/password_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/textInputLayout_textsize"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_marginTop="@dimen/checkbox_margintop"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree with"
+                android:textSize="@dimen/checkbox_size"
+                android:theme="@style/AppTheme.MyCheckBox"
+                android:layout_below="@id/password"/>
+
+            <TextView
+                android:id="@+id/termsConditions"
+                android:layout_marginTop="@dimen/checkbox_neartext_margintop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_toEndOf="@+id/checkBox"
+                android:textColor="@color/colorAccentLight"
+                android:layout_marginLeft="@dimen/checkbox_neartext_left"
+                android:textSize="@dimen/checkbox_size"
+                android:text="@string/terms" />
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_below="@id/checkBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SignUp_margintop"
+                android:text="Sign Up"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/buttonSignUp_textsize"
+                android:background="@drawable/buttonshape"
+                 />
+
+
+            <TextView
+                android:id="@+id/have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have an "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/havealready_textsize"
+                android:layout_alignBaseline="@+id/already"
+                android:layout_alignBottom="@+id/already"
+                android:layout_toStartOf="@+id/already" />
+            <TextView
+                android:id="@+id/already"
+                android:layout_marginTop="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccentLight"
+                android:text="@string/alreadyreistered"
+                android:textSize="@dimen/havealready_textsize"
+                android:layout_below="@+id/SignUp"
+                android:layout_alignEnd="@+id/termsConditions"
+                android:layout_marginEnd="40dp" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -8,4 +8,10 @@
     
     <string name="google_api_key">AIzaSyAVEjDeAh-8qDyj5IlmhlBWO0h1fNIBYDU</string>
     <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+
+    <string name="alreadyreistered"><u>account</u></string>
+    <string name="forgotpassword"><u>Forgot Password ?</u></string>
+    <string name="terms"><u>Terms and Conditions</u></string>
+    <string name="newuser"><u>Sign Up</u></string>
+    <string name="back"><u>Back</u></string>
 </resources>
