@@ -55,6 +55,10 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".Menuitem"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".ItemDetailsActivity"
                   android:theme="@style/AppTheme.NoActionBar">
 
